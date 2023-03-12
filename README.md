@@ -1,4 +1,4 @@
-# numbergame
+# Number Game
 
 Projeto Feito durante uma aula de projetos javascript na udemy.
 ![nunbercapa](https://user-images.githubusercontent.com/63726379/224571152-deb33999-db86-41f0-8649-41f45cf48080.png)
