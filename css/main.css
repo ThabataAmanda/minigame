@@ -1,0 +1,197 @@
+.div-Container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--principal);
+    padding: 2rem;
+    box-shadow: inset 0px 0px 10px 5px rgb(0 0 0 / 11%);
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 6px 2px black;
+    color: var(--white);
+}
+
+.dado {
+    width: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    padding: 30px;
+    background-color: var(--white);
+}
+
+.container form {
+    width: 40%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+.container form label {
+    font-size: 1.4rem;
+    color: var(--principal);
+}
+
+.container form input {
+    outline: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: var(--grey);
+    margin: 5% 0px;
+    padding: 10px;
+    background: var(--white);
+    border: 1px solid var(--principal);
+    border-radius: 0.2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.container form input:focus {
+    box-shadow: inset 1px 2px 4px 2px rgba(0, 0, 0, 0.1);
+}
+
+.container form button {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: 5%;
+    padding: 0.8rem;
+    transition: 0.3s ease-in-out;
+    background: var(--principal);
+    border-radius: 0.2rem;
+    border: 0;
+    outline: 0;
+}
+
+.container form button:hover {
+    color: var(--peach);
+    background-color: var(--principal);
+}
+
+.container .result-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 145px;
+    padding: 2rem;
+    color: var(--principal);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 0.5rem;
+}
+
+.container .result-box h2 {
+    position: absolute;
+    top: -14px;
+    left: 19%;
+    width: 326px;
+    color: var(--red);
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: center;
+    background: var(--white);
+    border: 2px solid var(--red);
+    border-radius: 7px;
+    padding: 5px 25px;
+}
+
+.container .result-box span {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.div-result {
+    display: none;
+    position: absolute;
+    left: 0;
+    max-width: 100%;
+    max-height: 100%;
+    border: 2px solid var(--red);
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+#attempt {
+    font-weight: 500;
+    color: var(--grey);
+}
+
+.container #btnRestar {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    display: none;
+    padding: 6px 15px;
+    cursor: pointer;
+    color: var(--red);
+    font-size: 20px;
+    background: var(--white);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 0.3rem;
+    transition: 0.2s ease-in-out;
+    border: 2px solid var(--red);
+    outline: 0;
+}
+
+.container #btnRestar:hover {
+    color: var(--white);
+    background: var(--red);
+}
+
+footer {
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    background-color: var(--principal);
+    box-shadow: inset 0px 0px 10px 5px rgb(0 0 0 / 11%);
+    padding: 1.4rem;
+}
+
+footer a {
+    color: var(--white);
+    font-weight: 800;
+    padding-left: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--white);
+}

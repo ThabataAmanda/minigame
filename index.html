@@ -1,40 +1,48 @@
 <!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Number Game</title>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/1.png" type="image/png">
-    <script src="js/index.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="div-Container">
+        <header>
+            <img class="dado" src="img/dado.gif" alt="">
+            <h1>Number Game</h1>
+            <img class="dado" src="img/dado.gif" alt="">
+        </header>
 
-    <header>
-        <h1>Number Game</h1>
-    </header>
+        <main class="container">
+            <form id="form">
+                <label for="kick">Digite Um Número de (0-50):</label>
 
-    <main class="container">
+                <input type="number" id="kick" max="50" placeholder="0">
+                <button type="submit">Jogar</button>
+            </form>
 
-        <form id="form">
-            <label for="kick">Digite Um Número de (0 -10):</label>
-            <input type="number" id="kick" max="10" placeholder="0">
-            <button type="submit">Jogar</button>
-        </form>
+            <section class="result-box" id="result">
+                <div id="div-result" class="div-result">
+                    <img src="img/gif.gif" alt="">
+                </div>
 
-        <section class="result-box" id="result">
-            <h2 id="status">Adivinhe o número sorteado</h2>
-            <span id="attempt">Tentativas: 0</span>
-        </section>
+                <h2 id="status">Adivinhe o Número Sorteado</h2>
+                <span id="attempt">Nº de tentativas: 0</span>
+                <button id="btnRestar" onclick="restart()">Jogar Novamente</button>
+            </section>
+        </main>
 
-        <button id="btnRestar" onclick="restart()">Jogar Novamente</button>
+        <footer>
+            <p>Number Picker - 2021 &copy;<a href="https://linkedin.com/in/thabataamandagomide/">Thabata Gomide</a></p>
+        </footer>
+    </div>
 
-    </main>
-
-    <footer>
-        <p>Number Picker - 2021 &copy;<a href="https://linkedin.com/in/thabataamandagomide/">Thabata Gomide</a></p>
-    </footer>
+    <script src="js/index.js" defer></script>
 </body>
 
 </html>
